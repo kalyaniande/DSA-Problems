@@ -37,3 +37,6 @@ func main() {
 	A := [][]int{{2, 7, 5}, {8, 9, 4}, {3, 1, 6}}
 	fmt.Println("Output: ", solve(A))
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
