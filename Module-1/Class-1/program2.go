@@ -36,3 +36,6 @@ func main() {
 		fmt.Println(n, " is not a Prime Number")
 	}
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)

@@ -35,3 +35,6 @@ func main() {
 	B := 2
 	fmt.Println("Output:", solve(A, B))
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)

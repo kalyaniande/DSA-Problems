@@ -43,3 +43,6 @@ func main() {
 	n := 100
 	fmt.Println(n, " factors count:", countFactors(n))
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)

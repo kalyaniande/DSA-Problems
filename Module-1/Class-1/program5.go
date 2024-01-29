@@ -44,3 +44,6 @@ func main() {
 	n := 19
 	fmt.Println("Count of prime numbers less than or equal to ", n, ":", primeNumbersCount(n))
 }
+
+// Time Complexity: O(N*N)
+// Space Complexity: O(1)

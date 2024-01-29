@@ -36,3 +36,6 @@ func main() {
 	n := 101
 	fmt.Println(" Square root of a number ", n, ":", sqrtOfNumber(n))
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
