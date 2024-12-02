@@ -31,11 +31,23 @@ import (
 )
 
 func increasingTriplet(nums []int) bool {
+	first := nums[0]
+	second := nums[0]
+	for _, num := range nums {
+		fmt.Println(num)
+		if num <= first {
+			first = num
+		} else if num <= second {
+			second = num
+		} else {
+			return true
+		}
+	}
 	return false
 }
 
 func main() {
-	nums := []int{1, 2, 3, 4, 5}
+	nums := []int{2, 4, -2, -3}
 
 	fmt.Println("Output: ", increasingTriplet(nums))
 }

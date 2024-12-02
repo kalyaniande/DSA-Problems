@@ -27,7 +27,24 @@ import (
 )
 
 func gcdOfStrings(str1 string, str2 string) string {
-	return ""
+	if str1+str2 != str2+str1 {
+		return ""
+	}
+	s1_length := len(str1)
+	s2_length := len(str2)
+
+	gcd := s1_length
+	if s2_length < s1_length {
+		gcd = s2_length
+	}
+	for gcd > 0 {
+		if s1_length%gcd == 0 && s2_length%gcd == 0 {
+			break
+		}
+		gcd--
+	}
+
+	return str1[:gcd]
 }
 func main() {
 	word1 := "ABCABC"

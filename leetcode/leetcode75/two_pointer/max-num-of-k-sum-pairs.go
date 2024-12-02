@@ -30,10 +30,26 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func maxOperations(nums []int, k int) int {
-	return 0
+	sort.Ints(nums)
+	result := 0
+	left, right := 0, len(nums)-1
+	for left < right {
+		sum := nums[left] + nums[right]
+		if sum == k {
+			result++
+			left++
+			right--
+		} else if sum < k {
+			left++
+		} else {
+			right--
+		}
+	}
+	return result
 }
 
 func main() {

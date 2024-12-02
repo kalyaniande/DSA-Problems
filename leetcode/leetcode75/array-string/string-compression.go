@@ -62,5 +62,5 @@ func compress(chars []byte) int {
 func main() {
 	chars := []byte{'a', 'a', 'b', 'b', 'c', 'c', 'c'}
 
-	fmt.Println("chars", string(chars))
+	fmt.Println("output: ", compress(chars))
 }
